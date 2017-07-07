@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
-  </head>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
 <body>
-  
-  <h1>Personality Test!!</h1>
-  <p> Use the checkboxes <em>below!</em> </p>
-  <p>This is a personality test proven to work by science!</p>
+  <div id="content">
+    <div id="main">
 
-  <form action="/action_page.php" method="get">
-  <input type="search">
-  <input type="email">
-  <input type="date">
-    <input type="radio" name="personality" value="Mellow"> I am Mellow<br>
-    <input type="radio" name="personality" value="Energetic"> I am Energetic<br>
-    <input type="submit" value="Submit">
-  </form>
+      <h1>Personality Test</h1>
+      <p>This is a personality test proven to work by science!</p>
 
+      <form method="get">
+        <fieldset>
+          <legend>About you</legend>
+          Name: <input type="text" placeholder="First Last" required><br> 
+          Email: <input type="email" placeholder="Enter your Email..." required><br>        
+            Date of birth: <input type="date">
+        </fieldset>
+        <fieldset>
+          <legend>Personality</legend>
+          <input type="radio" name="personality" value="Mellow"> I am Mellow<br>
+          <input type="radio" name="personality" value="Energetic"> I am Energetic<br>
+        </fieldset>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
 </body>
+
 </html>
